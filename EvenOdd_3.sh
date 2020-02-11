@@ -2,9 +2,17 @@
 echo "Input:"
 echo "Number:"
 read num 
-if [ $num % 2 ]
+bum=`expr $num % 2`
+if [ $bum -eq 0 ]
 then
-    echo "Odd"
+    flg=1
 else
-    echo " Even"
-fi        
+    flg=0
+fi   
+case $flg in 
+1)
+    echo "Even"
+    ;;
+0)  echo "Odd"
+    ;;
+esac
