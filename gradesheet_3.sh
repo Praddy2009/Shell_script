@@ -1,6 +1,5 @@
 #WAP to input the info of student like name roll and marks of different subject 
 #and display the gradesheet of the student using switch case.
-
 echo "Input:"
 echo "Roll No:"
 read roll
